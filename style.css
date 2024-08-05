@@ -82,3 +82,45 @@ select {
   background-position-x: calc(100% - 20px);
   background-position-y: 20px;
 }
+
+@media (max-width: 768px) {
+  .main h1 {
+    font-size: 35px;
+  }
+
+  textarea {
+    height: 200px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    min-height: 99vh;
+  }
+
+  .main h1 {
+    font-size: 25px;
+  }
+
+  textarea {
+    height: 150px;
+    width: 300px;
+  }
+
+  button {
+    padding: 10px 15px;
+  }
+
+  .row {
+    width: 300px;
+  }
+}
